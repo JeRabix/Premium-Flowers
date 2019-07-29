@@ -87,7 +87,18 @@ if (window.innerWidth < 1280) {
 //card карточка товара в мобилке открытие пунктов
 $('.card-mobile-list__item').click(function(event) {
 	$(this).next().slideToggle();
-	$(this).next().find('span').toggleClass('active');
+	if ($(this).find('span').text() == '+') {
+		$(this).find('span').text('-');
+	}
+	else {
+		$(this).find('span').text('+');
+	}
+	
+});
+
+//фильтрация выбор
+$('.catalog-find__p, .catalog-color__item').click(function(event) {
+	$(this).toggleClass('active');
 });
 
 

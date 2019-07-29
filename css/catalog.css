@@ -45,9 +45,25 @@
   background-color: #000000;
 }
 
+.catalog-color__item.black.active {
+  color: #fff;
+}
+
 .catalog-color__item.white {
   background-color: #ffffff;
   border: 1px solid #d8d8d8;
+}
+
+.catalog-color__item.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.catalog-color__item.active:before {
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: bold;
 }
 
 .catalog-color__item.colorpicker {
@@ -123,6 +139,20 @@
 .catalog-find__p:hover {
   color: #fff;
   background-color: #000;
+}
+
+.catalog-find__p.active {
+  background-color: #000;
+  color: #fff;
+  position: relative;
+}
+
+.catalog-find__p.active:before {
+  font-weight: bold;
+  content: '\f00c';
+  font-family: 'Font Awesome 5 Free';
+  position: absolute;
+  right: 9px;
 }
 
 .catalog-find__head {

@@ -26,9 +26,19 @@
 				background-color: #bf15b4
 			&.black
 				background-color: #000000
+				&.active
+					color: #fff
 			&.white
 				background-color: #ffffff
 				border: 1px solid #d8d8d8
+			&.active
+				display: flex
+				align-items: center
+				justify-content: center
+				&:before
+					content: '\f00c'
+					font-family: 'Font Awesome 5 Free'
+					font-weight: bold
 			&.colorpicker
 				background-image: url(../img/catalog-colorpicker.png)
 	&-title
@@ -82,6 +92,16 @@
 			&:hover
 				color: #fff
 				background-color: #000
+			&.active
+				background-color: #000
+				color: #fff
+				position: relative
+				&:before
+					font-weight: bold
+					content: '\f00c'
+					font-family: 'Font Awesome 5 Free'
+					position: absolute
+					right: 9px
 		&__head
 			display: flex
 			align-items: center
