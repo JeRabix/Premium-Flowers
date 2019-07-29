@@ -1,0 +1,121 @@
+.status-title {
+  margin-bottom: 30px;
+}
+
+.status-item {
+  position: relative;
+}
+
+.status-item:after {
+  content: '';
+  height: 1px;
+  background-color: #e4e4e4;
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  right: 15px;
+}
+
+.status-item__time {
+  font-size: 13px;
+  color: #8c8c8c;
+  padding-left: 134px;
+}
+
+.status-item__time span {
+  color: #000;
+  font-weight: 500;
+}
+
+.status-item__slide {
+  margin-top: 30px;
+}
+
+.status-item__row {
+  display: flex;
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+
+.status-item__title {
+  padding-top: 23px;
+  width: 120px;
+  flex-shrink: 0;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.status-item__title.no-top {
+  padding-top: 0;
+}
+
+.status-item__img {
+  margin-right: 24px;
+}
+
+.status-progress {
+  width: 90%;
+  height: 4px;
+  border-radius: 44px;
+  background: linear-gradient(to right, #000 50%, #f7f6f6 50%);
+  position: relative;
+}
+
+.status-progress__row {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15px;
+  align-items: center;
+  margin-bottom: 40px;
+  padding-left: 15px;
+}
+
+.status-progress__item {
+  top: 50%;
+  border-radius: 44px;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 16px;
+  background-color: #000;
+  position: absolute;
+  left: 0;
+}
+
+.status-progress__item.sec {
+  left: 20%;
+}
+
+.status-progress__item.three {
+  left: 40%;
+}
+
+.status-progress__item.four {
+  left: 60%;
+  background-color: #f7f6f6;
+}
+
+.status-progress__item.five {
+  left: 80%;
+  background-color: #f7f6f6;
+}
+
+.status-progress__p {
+  position: absolute;
+  top: 150%;
+  font-size: 13px;
+  width: 200px;
+}
+
+.status-progress__p.sec {
+  top: -150%;
+}
+
+.status-progress__p.three {
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.status-progress__p.four {
+  top: -150%;
+  opacity: 0.47;
+}

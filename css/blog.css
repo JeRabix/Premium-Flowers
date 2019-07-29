@@ -1,0 +1,137 @@
+.blog-title {
+  margin-bottom: 30px;
+}
+
+.blog-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.blog-item {
+  border: 1px solid #e5e5ea;
+  border-radius: 5px;
+  padding-top: 47px;
+  max-width: 578px;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.blog-item.blog {
+  padding-top: 0;
+  border: 0;
+}
+
+.blog-item__img {
+  margin-bottom: 25px;
+  padding-right: 70px;
+  padding-left: 43px;
+}
+
+@media (max-width: 1280px) {
+  .blog-item__img {
+    padding-left: 15px;
+  }
+}
+
+.blog-item__img.blog {
+  padding: 0;
+}
+
+.blog-item__img.blog img {
+  width: 100%;
+}
+
+.blog-item__title {
+  font-size: 33px;
+  margin-bottom: 28px;
+  padding-right: 70px;
+  padding-left: 43px;
+}
+
+@media (max-width: 1280px) {
+  .blog-item__title {
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.blog-item__title.blog {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 17px;
+}
+
+.blog-item__descr {
+  padding-right: 70px;
+  padding-left: 43px;
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 70px;
+}
+
+@media (max-width: 1280px) {
+  .blog-item__descr {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.blog-item__descr.blog {
+  margin-bottom: 40px;
+}
+
+.blog-item__footer {
+  border-top: 1px dashed #d8d8d8;
+  align-items: center;
+  display: flex;
+  padding-right: 70px;
+  padding-left: 43px;
+  padding-top: 40px;
+}
+
+@media (max-width: 1280px) {
+  .blog-item__footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.blog-item__footer-left {
+  margin-right: 25px;
+}
+
+.blog-item__footer-subtitle {
+  opacity: 0.77;
+  font-size: 12px;
+}
+
+.blog-item__footer-title {
+  color: #f85c49;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.blog-item__footer-btn {
+  width: 136px;
+  color: #ffffff;
+  border: 0;
+  height: 40px;
+  box-shadow: 6px 5px 9px rgba(248, 92, 73, 0.18);
+  border-radius: 5px;
+  background-color: #f85c49;
+}
+
+.blog-item__footer-btn.blog {
+  margin-left: 43px;
+}
+
+@media (max-width: 1280px) {
+  .blog-item__footer-btn.blog {
+    margin-left: 15px;
+  }
+}

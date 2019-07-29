@@ -12,12 +12,24 @@
 	&--banners
 		flex-direction: row
 		align-items: center
+		@media (max-width: $media-mobile)
+			justify-content: center
+			padding: 0
 	&--pay
 		flex-direction: row
 		justify-content: space-between
 	&--sales
 		flex-direction: row
 		justify-content: space-between
+		@media (max-width: $media-mobile)
+			padding: 0
+			display: block
+			&.slick-initialized .slick-slide
+				margin-right: 10px
+				margin-left: 10px
+				padding: 20px
+				padding-bottom: 30px
+				box-shadow: 10px 10px 27px rgba(0, 0, 0, 0.24)
 	&--footer
 		flex-direction: row
 		padding-top: 40px

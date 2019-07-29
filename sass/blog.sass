@@ -1,3 +1,4 @@
+@import "media";
 .blog
 	&-title
 		margin-bottom: 30px
@@ -19,13 +20,22 @@
 			margin-bottom: 25px
 			padding-right: 70px
 			padding-left: 43px
+			@media (max-width: $media-mobile)
+				padding-left: 15px
 			&.blog
 				padding: 0
+				& img
+					width: 100%
 		&__title
 			font-size: 33px
 			margin-bottom: 28px
 			padding-right: 70px
 			padding-left: 43px
+			@media (max-width: $media-mobile)
+				font-size: 18px
+				font-weight: 500
+				padding-left: 15px
+				padding-right: 15px
 			&.blog
 				font-size: 25px
 				font-weight: 500
@@ -36,6 +46,9 @@
 			font-size: 14px
 			line-height: 21px
 			margin-bottom: 70px
+			@media (max-width: $media-mobile)
+				padding-left: 15px
+				padding-right: 15px
 			&.blog
 				margin-bottom: 40px
 		&__footer
@@ -45,6 +58,11 @@
 			padding-right: 70px
 			padding-left: 43px
 			padding-top: 40px
+			@media (max-width: $media-mobile)
+				padding-top: 30px
+				padding-bottom: 30px
+				padding-left: 15px
+				padding-right: 15px
 			&-left
 				margin-right: 25px
 			&-subtitle
@@ -64,3 +82,5 @@
 				background-color: #f85c49
 				&.blog
 					margin-left: 43px
+					@media (max-width: $media-mobile)
+						margin-left: 15px

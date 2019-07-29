@@ -1,8 +1,11 @@
+@import "media";
 
 .banners
 	&-block
 		display: flex
 		flex-wrap: wrap
+		@media (max-width: $media-mobile)
+			display: none
 		&__title
 			font-size: 16px
 			line-height: 23px
@@ -41,11 +44,22 @@
 		max-width: 594px
 		position: relative
 		margin-right: 15px
+		@media (max-width: $media-mobile)
+			margin-right: 0
+			&.slick-initialized .slick-slide
+				margin-left: 10px
+				margin-right: 10px
 	&-slide
 		position: relative
 		padding-left: 34px
 		padding-top: 49px
 		min-height: 432px
+		overflow: hidden
+		border-radius: 5px
+		@media (max-width: $media-mobile)
+			min-height: 194px
+			border-radius: 7px
+			box-shadow: 10px 10px 27px rgba(0, 0, 0, 0.24)
 		& img
 			z-index: -1
 			position: absolute
@@ -53,6 +67,8 @@
 			height: 100%
 			left: 0
 			top: 0
+			@media (max-width: $media-mobile)
+				height: auto
 	&-big
 		&__title
 			color: #ffffff
@@ -62,6 +78,8 @@
 			display: flex
 			flex-direction: column
 			align-items: flex-start
+			@media (max-width: $media-mobile)
+				display: none
 		&__item
 			font-size: 14px
 			border-radius: 3px

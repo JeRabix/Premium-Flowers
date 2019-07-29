@@ -10,10 +10,12 @@
 		overflow: hidden
 	&--header
 		padding-top: 15px
+		@media (max-width: $media-mobile)
+			margin-bottom: 20px
 	&--banners
 		margin-bottom: 70px
-		@media (max-width: $media-mobile)
-			display: none
+		// @media (max-width: $media-mobile)
+			// justify-content: center
 	&--main-catalog
 		margin-bottom: 40px
 	&--pay

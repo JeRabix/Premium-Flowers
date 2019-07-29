@@ -1,0 +1,162 @@
+.banners-block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1280px) {
+  .banners-block {
+    display: none;
+  }
+}
+
+.banners-block__title {
+  font-size: 16px;
+  line-height: 23px;
+  position: relative;
+}
+
+.banners-block__title:before {
+  content: '';
+  width: 44px;
+  height: 2px;
+  background-color: #f65757;
+  top: -17px;
+  left: 0;
+  position: absolute;
+}
+
+.banners-block__item {
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  flex-shrink: 0;
+  position: relative;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 201px;
+  width: 282px;
+  margin-bottom: 30px;
+}
+
+.banners-block__item.no-margin {
+  margin-bottom: 0;
+}
+
+.banners-block__item img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  top: 0;
+}
+
+.banners-slider {
+  width: 100%;
+  max-width: 594px;
+  position: relative;
+  margin-right: 15px;
+}
+
+@media (max-width: 1280px) {
+  .banners-slider {
+    margin-right: 0;
+  }
+  .banners-slider.slick-initialized .slick-slide {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.banners-slide {
+  position: relative;
+  padding-left: 34px;
+  padding-top: 49px;
+  min-height: 432px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+@media (max-width: 1280px) {
+  .banners-slide {
+    min-height: 194px;
+    border-radius: 7px;
+    box-shadow: 10px 10px 27px rgba(0, 0, 0, 0.24);
+  }
+}
+
+.banners-slide img {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+@media (max-width: 1280px) {
+  .banners-slide img {
+    height: auto;
+  }
+}
+
+.banners-big__title {
+  color: #ffffff;
+  margin-bottom: 26px;
+  font-size: 34px;
+}
+
+.banners-big__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+@media (max-width: 1280px) {
+  .banners-big__list {
+    display: none;
+  }
+}
+
+.banners-big__item {
+  font-size: 14px;
+  border-radius: 3px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: #fff;
+  margin-bottom: 12px;
+  transition: 0.3s;
+}
+
+.banners-big__item:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.slick-dots {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  z-index: 10;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots li {
+  cursor: pointer;
+  width: 15px;
+  border-radius: 50%;
+  height: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-color: #ffffff;
+}
+
+.slick-dots li button {
+  display: none;
+}
+
+.slick-dots li.slick-active {
+  background-color: #000;
+}

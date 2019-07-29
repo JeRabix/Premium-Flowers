@@ -1,0 +1,29 @@
+.gifts-block__img {
+  height: 271px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fee9cd;
+  border-radius: 5px;
+}
+
+.gifts-block__img.orange {
+  background-color: #fee9cd;
+}
+
+.gifts-block__img.gray {
+  background-color: #f1f1f1;
+}
+
+.gifts-block__img.blue {
+  background-color: #e8f1f8;
+}
+
+.gifts-block__img.red {
+  background-color: #fcd6d0;
+}
+
+.gifts-block__img img {
+  width: auto;
+  height: auto;
+}

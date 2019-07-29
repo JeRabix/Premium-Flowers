@@ -1,0 +1,103 @@
+@import "media";
+
+.modal
+	&-bg
+		display: none
+		position: fixed
+		width: 100%
+		height: 100%
+		z-index: 20
+		top: 0
+		left: 0
+		background-color: rgba(#000, 0.6)
+	&-add
+		display: none
+		max-width: 100%
+		width: 320px
+		position: fixed
+		top: 50%
+		left: 50%
+		background-color: #fff
+		z-index: 21
+		padding: 30px
+		padding-top: 40px
+		padding-bottom: 40px
+		transform: translate(-50%, -50%)
+		border-radius: 5px
+		&__img
+			border-radius: 50%
+			margin: 0 auto
+			width: 90px
+			display: block
+			margin-bottom: 20px
+		&__attr
+			font-weight: bold
+			font-size: 19px
+		&__label
+			font-size: 14px
+	&-title
+		font-size: 20px
+		font-weight: bold
+		text-align: center
+		margin-bottom: 17px
+	&-subtitle
+		font-size: 14px
+		text-align: center
+		margin-bottom: 20px
+	&-close
+		display: flex
+		align-items: center
+		justify-content: center
+		position: absolute
+		right: 10px
+		top: 10px
+		font-size: 20px
+		color: red
+		border: 1px solid red
+		border-radius: 50%
+		width: 30px
+		height: 30px
+	&-block
+		display: flex
+		width: 100%
+		justify-content: center
+		margin-bottom: 15px
+	&-btn
+		width: auto
+		margin-bottom: 20px
+		& i
+			margin-right: 20px
+	&-row
+		position: relative
+		&.first
+			margin-right: 25px
+			&:before
+				content: ''
+				height: 100%
+				width: 1px
+				position: absolute
+				right: -12px
+				top: 0
+				background-color: rgba(#000, 0.2)
+	&-bottom
+		display: flex
+		align-items: center
+		justify-content: space-between
+		font-size: 13px
+	&-back
+		text-decoration: underline
+	&-delete
+		display: flex
+		align-items: center
+		color: #f65757
+		position: relative
+		&:after
+			content: ''
+			width: 80%
+			height: 1px
+			background-color: #f65757
+			position: absolute
+			bottom: 0
+			right: 0
+		& img
+			margin-right: 5px

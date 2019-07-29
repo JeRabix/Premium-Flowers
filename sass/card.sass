@@ -1,3 +1,5 @@
+@import "media";
+
 .card
 	&-right
 		width: 100%
@@ -6,16 +8,22 @@
 			justify-content: space-between
 			width: 100%
 			margin-bottom: 50px
+			@media (max-width: $media-mobile)
+				flex-direction: column
 		&__left
 			max-width: 370px
 			width: 100%
 		&__right
 			max-width: 236px
 			width: 100%
+			@media (max-width: $media-mobile)
+				max-width: unset
 	&-hat
 		display: flex
 		align-items: flex-end
 		margin-bottom: 25px
+		@media (max-width: $media-mobile)
+			display: none
 		&__input
 			margin-right: 30px
 			width: 84px
@@ -49,16 +57,22 @@
 	&-block
 		display: flex
 		justify-content: space-between
+		@media (max-width: $media-mobile)
+			flex-direction: column
 	&-title
 		font-size: 32px
 		font-weight: 400
 		margin-bottom: 3px
+		@media (max-width: $media-mobile)
+			font-size: 22px
 	&-subtitle
 		color: #007aff
 		font-size: 14px
 		text-decoration: underline
 		margin-bottom: 30px
 		display: inline-block
+		@media (max-width: $media-mobile)
+			font-size: 12px
 	&-price
 		display: flex
 		align-items: center
@@ -68,6 +82,8 @@
 			font-size: 35px
 			margin-right: 10px
 			font-weight: 500
+			@media (max-width: $media-mobile)
+				font-size: 24px
 		&__bonus
 			display: flex
 			align-items: center
@@ -76,6 +92,9 @@
 			background-color: #000000
 			border-radius: 3px
 			padding: 8px 12px 8px 12px
+			@media (max-width: $media-mobile)
+				font-size: 11px
+				padding: 4px 6px 4px 6px
 	&-time
 		opacity: 0.55
 		color: #000000
@@ -93,6 +112,8 @@
 			border-radius: 5px
 			border: 1px solid #dfdfdf
 			font-size: 14px
+			@media (max-width: $media-mobile)
+				width: 135px
 	&-add
 		display: flex
 		justify-content: space-between
@@ -107,6 +128,8 @@
 			//text
 			color: #ffffff
 			font-size: 16px
+			@media (max-width: $media-mobile)
+				width: 220px
 			&:hover
 				box-shadow: 6px 5px 9px rgba(248, 92, 73, 0.32)
 		&__follow
@@ -141,6 +164,8 @@
 		font-size: 15px
 		text-decoration: underline
 	&-tags
+		@media (max-width: $media-mobile)
+			margin-bottom: 20px
 		&__title
 			font-size: 16px
 			margin-bottom: 10px
@@ -154,6 +179,8 @@
 	&-what
 		margin-bottom: 35px
 		position: relative
+		@media (max-width: $media-mobile)
+			display: none
 		&:after
 			content: ''
 			width: 100%
@@ -187,11 +214,13 @@
 	&-advantage
 		background-color: #f5f5f5
 		border-radius: 6px
+		@media (max-width: $media-mobile)
+			display: flex
+			flex-wrap: wrap
 		&__item
 			//text
 			font-size: 14px
 			line-height: 15px
-
 			position: relative
 			display: flex
 			padding-bottom: 15px
@@ -199,6 +228,9 @@
 			padding-left: 20px
 			padding-right: 25px
 			align-items: center
+			@media (max-width: $media-mobile)
+				width: 50%
+				font-size: 12px
 			& img
 				margin-right: 10px
 		&__info
@@ -218,6 +250,8 @@
 	&-slider
 		max-width: 594px
 		width: 100%
+		@media (max-width: $media-mobile)
+			position: relative
 		&__current
 			margin-bottom: 17px
 			& img
@@ -226,17 +260,28 @@
 		&__list
 			display: flex
 			height: 70px
+			@media (max-width: $media-mobile)
+				flex-direction: column
+				position: absolute
+				height: auto
+				left: 15px
+				bottom: 40px
 			& img
 				height: 100%
 				width: auto
 				margin-right: 14px
 				cursor: pointer
+				@media (max-width: $media-mobile)
+					height: auto
+					width: 51px
 	&-tabs
 		&__title
 			font-size: 19px
 		&__head
 			display: flex
 			position: relative
+			@media (max-width: $media-mobile)
+				display: none
 			&:after
 				content: ''
 				width: 100%
@@ -247,10 +292,13 @@
 				left: 0
 		&__body
 			padding-top: 30px
+		&__descr
 	&-descr
 		&__line
 			position: relative
 			margin-bottom: 40px
+			@media (max-width: $media-mobile)
+				display: none
 			&:after
 				content: ''
 				width: 100%
@@ -448,3 +496,20 @@
 			font-size: 15px
 			line-height: 19px
 			margin-bottom: 18px
+	&-mobile
+		&-list
+			&__item
+				display: none
+				@media (max-width: $media-mobile)
+					display: block
+					width: 100%
+					font-size: 16px
+					margin-bottom: 25px
+					position: relative
+					& span
+						display: block
+						position: absolute
+						right: 0
+						top: 50%
+						transform: translateY(-50%)
+						&.active
