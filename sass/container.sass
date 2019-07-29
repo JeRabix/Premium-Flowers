@@ -1,0 +1,58 @@
+@import "media";
+
+
+.ycont
+	display: flex
+	flex-direction: column
+	max-width: 1280px
+	padding-left: 15px
+	padding-right: 15px
+	width: 100%
+	position: relative
+	&--banners
+		flex-direction: row
+		align-items: center
+	&--pay
+		flex-direction: row
+		justify-content: space-between
+	&--sales
+		flex-direction: row
+		justify-content: space-between
+	&--footer
+		flex-direction: row
+		padding-top: 40px
+		padding-bottom: 30px
+		margin-bottom: 30px
+		justify-content: space-between
+		&:before
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: #e5e5ea
+			position: absolute
+			top: 0
+			left: 0
+		&:after
+			content: ''
+			width: 100%
+			height: 1px
+			background-color: #e5e5ea
+			position: absolute
+			bottom: 0
+			left: 0
+			@media (max-width: $media-mobile)
+				display: none
+	&--footer-end
+		justify-content: space-between
+		flex-direction: row
+		align-items: center
+		padding-bottom: 30px
+		@media (max-width: $media-mobile)
+			flex-wrap: wrap
+			padding-bottom: 0
+	&--checkout
+		flex-direction: row
+		justify-content: space-between
+	&--cart
+		flex-direction: row
+		justify-content: space-between

@@ -1,0 +1,113 @@
+.catalog
+	&-color
+		display: flex
+		max-width: 140px
+		flex-wrap: wrap
+		justify-content: space-between
+		&__item
+			margin-bottom: 10px
+			cursor: pointer
+			width: 36px
+			height: 36px
+			border-radius: 50%
+			&.red
+				background-color: #fa0200
+			&.pink
+				background-color: #ffcdce
+			&.orange
+				background-color: #ff9a00
+			&.yellow
+				background-color: #ffcd00
+			&.green
+				background-color: #01cd5e
+			&.blue
+				background-color: #0067d0
+			&.violent
+				background-color: #bf15b4
+			&.black
+				background-color: #000000
+			&.white
+				background-color: #ffffff
+				border: 1px solid #d8d8d8
+			&.colorpicker
+				background-image: url(../img/catalog-colorpicker.png)
+	&-title
+		margin-bottom: 15px
+	&-find
+		background-color: #fafafa
+		border-radius: 10px
+		padding-left: 25px
+		padding-right: 25px
+		padding-top: 15px
+		margin-bottom: 30px
+		position: relative
+		&__link
+			color: #0f81ff
+			position: absolute
+			right: 40px
+			bottom: 15px
+		&__count
+			font-size: 14px
+			opacity: 0.67
+			text-align: center
+			padding-top: 13px
+			padding-bottom: 13px
+		&__block
+			justify-content: space-between
+			display: flex
+			position: relative
+			&:after
+				content: ''
+				width: 100%
+				height: 1px
+				bottom: 0
+				position: absolute
+				left: 0
+				background-color: #efeff2
+		&__title
+			font-size: 16px
+			font-weight: 500
+			line-height: 44px
+			margin-right: 10px
+		&__subtitle
+			font-size: 11px
+			opacity: 0.55
+		&__p
+			font-size: 14px
+			line-height: 33px
+			padding-left: 7px
+			cursor: pointer
+			transition: 0.3s
+			border-radius: 3px
+			&:hover
+				color: #fff
+				background-color: #000
+		&__head
+			display: flex
+			align-items: center
+	&-sort
+		display: flex
+		align-items: center
+		margin-bottom: 30px
+		&__img
+			margin-right: 8px
+		&__subtitle
+			margin-right: 18px
+			opacity: 0.53
+			font-size: 14px
+			&.active
+				opacity: 1
+				border-radius: 3px
+				border: 1px solid #000000
+				padding: 5px
+			&.no-opacity
+				opacity: 1
+	&-pay
+		display: flex
+		margin-bottom: 50px
+	&-promo
+		display: flex
+		justify-content: space-between
+		margin-bottom: 35px
+	&-more
+		margin-bottom: 45px

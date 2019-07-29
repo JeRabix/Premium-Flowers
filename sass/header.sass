@@ -1,0 +1,270 @@
+@import "media";
+
+.header
+	&-top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		padding-bottom: 15px
+		margin-bottom: 30px
+		@media (max-width: $media-mobile)
+			display: none
+		&:after
+			content: ''
+			width: 100%
+			height: 1px
+			background: #e5e5ea
+			position: absolute
+			bottom: 0
+			left: 0
+		&__ico
+			margin-right: 5px
+		&__log
+			display: flex
+			align-items: center
+			justify-content: center
+		&__nav
+			display: flex
+			@media (max-width: $media-mobile)
+				width: 100%
+				overflow: auto
+				-webkit-overflow-scrolling: touch
+			&-link
+				margin-right: 20px
+				font-size: 14px
+				@media (max-width: $media-mobile)
+					display: flex
+					max-width: 120px
+					flex-direction: column
+					align-items: center
+					text-align: center
+					flex-shrink: 0
+					margin-right: 25px
+	&-middle
+		display: flex
+		justify-content: space-between
+		align-items: center
+		position: relative
+		margin-bottom: 32px
+		@media (max-width: $media-mobile)
+			display: none
+		&.mobile
+			display: none
+			@media (max-width: $media-mobile)
+				display: flex
+				margin-bottom: 10px
+		&__logo
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			& img
+				width: 100%
+		&__delivery
+			display: flex
+			&-input
+				margin-bottom: 3px
+			&-txt
+				font-size: 12px
+				letter-spacing: 0.21px
+			& i
+				margin-right: 10px
+			&-left
+				padding-top: 10px
+				margin-right: 20px
+		&__contacts
+			display: flex
+			justify-content: space-between
+			&-left
+				margin-right: 50px
+				padding-left: 15px
+				position: relative
+				&:before
+					content: '\f3c5'
+					font-family: 'Font Awesome 5 Free'
+					font-size: 14px
+					font-weight: bold
+					position: absolute
+					left: 0
+					top: 0
+					// transform: translateY(-50%)
+			&-title
+				font-size: 15px
+			&-subtitle
+				opacity: 0.74
+				font-size: 12px
+	&-bottom
+		padding-top: 10px
+		padding-bottom: 10px
+		position: relative
+		&.mobile
+			display: none
+			@media (max-width: $media-mobile)
+				display: flex
+				padding-bottom: 0
+		&:before, &:after
+			width: 100%
+			content: ''
+			height: 1px
+			background: #e5e5ea
+			left: 0
+			position: absolute
+		&:before
+			top: 0
+		&:after
+			bottom: 0
+		&__nav
+			& a
+				color: #007aff
+				@media (max-width: $media-mobile)
+					color: #000
+					font-size: 11px
+		&__input
+			background-color: transparent
+			min-width: 0
+
+	&-mobile
+		&__close
+			position: absolute
+			right: 15px
+			top: 5px
+			color: #fff
+			font-size: 32px
+		&__left, &__right
+			display: flex
+			align-items: center
+		&__logout
+			position: absolute
+			right: 11px
+		&__plus
+			color: #4c4c4c
+			font-size: 32px
+			position: absolute
+			right: 15px
+		&__address
+			position: relative
+			padding-top: 20px
+			padding-bottom: 20px
+			margin-bottom: 35px
+			font-size: 15px
+			display: flex
+			&-txt
+				&.gray
+					opacity: 0.71
+					font-size: 14px
+					margin-top: 2px
+					margin-bottom: 8px
+			&:after, &:before
+				content: ''
+				width: 100%
+				height: 1px
+				background-color: #2f2f2f
+				position: absolute
+				left: 0
+			&:after
+				top: 0
+			&:before
+				bottom: 0
+			& i
+				color: #f85c49
+				font-size: 28px
+				margin-right: 6px
+		&__list
+			padding: 0
+			margin: 0
+			line-height: 38px
+			padding-left: 19px
+			&.sub
+				display: none
+				padding-left: 16px
+				line-height: 36px
+				font-size: 16px
+			&.last
+				display: block
+				margin-bottom: 30px
+				& a
+					font-size: 16px
+					line-height: 30px
+		&__item
+			position: relative
+			font-size: 18px
+			&.sub
+				& a
+					color: #8b8b8b
+		&__lk
+			position: relative
+			display: flex
+			align-items: center
+			background-color: rgba(#474747, 0.38)
+			border-radius: 6px
+			padding-top: 14px
+			padding-bottom: 14px
+			padding-left: 18px
+			margin-bottom: 20px
+			&-subtitle
+				opacity: 0.6
+				font-size: 12px
+				margin-left: 11px
+		&__logo
+			padding-left: 19px
+			margin-bottom: 20px
+			display: block
+		&__menu
+			display: none
+			position: fixed
+			overflow: auto
+			color: #fff
+			z-index: 10
+			padding-top: 16px
+			padding-left: 15px
+			padding-right: 15px
+			padding-bottom: 25px
+			top: 0
+			left: 0
+			width: 100vw
+			height: 100%
+			min-height: 100vh
+			background-color: #000
+			& a
+				color: #fff
+		&__bag
+			margin-right: 27px
+			position: relative
+			&-cir
+				width: 7px
+				height: 7px
+				border-radius: 50%
+				background-color: #f65757
+				position: absolute
+				right: -8px
+				top: -3px
+		&__phone
+			width: 22px
+			height: 22px
+			display: flex
+			align-items: center
+			justify-content: center
+			box-shadow: 0 3px 6px rgba(246, 87, 87, 0.37)
+			background-color: #f65757
+			border-radius: 50%
+			color: #fff
+			transform: rotate(223deg)
+			font-size: 12px
+		&__ico
+			margin-right: 23px
+			display: flex
+			width: 20px
+			height: 13px
+			position: relative
+			& span
+				width: 100%
+				height: 1px
+				background-color: #000
+				position: absolute
+				top: 0
+				left: 0
+			& span:nth-of-type(2)
+				top: 6px
+			& span:nth-of-type(3)
+				top: 100%

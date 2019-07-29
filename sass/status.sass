@@ -1,0 +1,82 @@
+.status
+	&-title
+		margin-bottom: 30px
+	&-item
+		position: relative
+		&:after
+			content: ''
+			height: 1px
+			background-color: #e4e4e4
+			position: absolute
+			bottom: 0
+			left: 15px
+			right: 15px
+		&__time
+			font-size: 13px
+			color: #8c8c8c
+			padding-left: 134px
+			& span
+				color: #000
+				font-weight: 500
+		&__slide
+			margin-top: 30px
+		&__row
+			display: flex
+			margin-bottom: 40px
+			padding-left: 15px
+		&__title
+			padding-top: 23px
+			width: 120px
+			flex-shrink: 0
+			font-size: 15px
+			font-weight: 500
+			&.no-top
+				padding-top: 0
+		&__img
+			margin-right: 24px
+	&-progress
+		width: 90%
+		height: 4px
+		border-radius: 44px
+		background: linear-gradient(to right, #000 50%, #f7f6f6 50%)
+		position: relative
+		&__row
+			display: flex
+			justify-content: space-between
+			padding-right: 15px
+			align-items: center
+			margin-bottom: 40px
+			padding-left: 15px
+		&__item
+			top: 50%
+			border-radius: 44px
+			transform: translateY(-50%)
+			width: 3px
+			height: 16px
+			background-color: #000
+			position: absolute
+			left: 0
+			&.sec
+				left: 20%
+			&.three
+				left: 40%
+			&.four
+				left: 60%
+				background-color: #f7f6f6
+			&.five
+				left: 80%
+				background-color: #f7f6f6
+		&__p
+			position: absolute
+			top: 150%
+			font-size: 13px
+			width: 200px
+			&.sec
+				top: -150%
+			&.three
+				font-weight: 500
+				font-size: 17px
+			&.four
+				top: -150%
+				opacity: 0.47
+			&.five

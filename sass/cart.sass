@@ -1,0 +1,163 @@
+.cart
+	&-contacts
+		border-radius: 5px
+		background-color: #e5e5ea
+		padding-bottom: 40px
+		margin-bottom: 35px
+		&__title.bottom
+			color: #000000
+			font-size: 11px
+			opacity: 0.63
+		&__link
+			color: #007aff
+			font-size: 12px
+			border-color: #007aff
+			position: absolute
+			right: 37px
+			bottom: 22px
+		&__col.bottom.bot
+			width: 26%
+			padding-top: 5px
+			padding-bottom: 5px
+			&.big
+				width: 50%
+		&__row
+			position: relative
+			&:after
+				content: ''
+				width: calc(100%-60px)
+				height: 1px
+				left: 50%
+				transform: translateX(-50%)
+				background-color: #d4d4d4
+				position: absolute
+				bottom: 0
+	&-pay
+		padding-top: 30px
+		margin-bottom: 38px
+		display: flex
+		align-items: center
+		&__item
+			display: flex
+			align-items: center
+			height: 33px
+			margin-right: 16px
+			border-radius: 17px
+			background-color: #f9f9f9
+			padding-left: 18px
+			padding-top: 7px
+			padding-bottom: 7px
+			position: relative
+			padding-right: 41px
+			font-size: 14px
+			transition: 0.3s
+			& i
+				font-size: 26px
+			&:hover
+				color: #fff
+				background-color: #000
+		&__ico
+			border-radius: 50%
+			position: absolute
+			right: 10px
+			top: 50%
+			transform: translateY(-50%)
+			width: 14px
+			height: 14px
+			border: 1px solid #000000
+			background-color: #ffffff
+	&-card
+		display: flex
+		justify-content: space-between
+		margin-top: 20px
+		align-items: center
+		margin-bottom: 50px
+		&__txt
+			opacity: 0.96
+			font-size: 13px
+			text-align: center
+		&__bottom
+			display: flex
+			justify-content: space-between
+		&__wrap
+			width: 100%
+			position: relative
+			& input
+				width: 100%
+			& img
+				position: absolute
+				right: 15px
+				top: 21px
+				transform: translateY(-50%)
+		&__right
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 35%
+			& img
+				margin-bottom: 23px
+		&__left
+			padding-top: 19px
+			padding-left: 27px
+			padding-bottom: 5px
+			padding-right: 37px
+			max-width: 58%
+			width: 100%
+			border-radius: 5px
+			border: 1px solid #dfdfdf
+		&__logo
+			margin-bottom: 28px
+		&__title
+			margin-bottom: 5px
+			font-size: 12px
+			opacity: 0.36
+		&__input
+			height: 42px
+			border-radius: 5px
+			background-color: #ffffff
+			border: 1px solid #e5e5ea
+			color: #000000
+			font-size: 15px
+			margin-bottom: 20px
+			min-width: unset
+			&.mail
+				width: 323px
+			&.medium
+				width: 115px
+			&.small
+				margin-right: 10px
+				width: 70px
+			&:active, &:focus
+				border: 1px solid #000000
+	&-mail
+		display: flex
+		margin-bottom: 12px
+		align-items: center
+		& .checkbox
+			margin-right: 23px
+	&-bonus
+		margin-bottom: 14px
+		display: flex
+		padding-top: 10px
+		padding-left: 20px
+		padding-right: 15px
+		padding-bottom: 13px
+		align-items: center
+		font-size: 16px
+		justify-content: space-between
+		background-color: #e5e5ea
+		border-radius: 6px
+		&__link
+			color: #0f81ff
+	&-bottom
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 50px
+		& .checkbox
+			max-width: 340px
+			align-items: center
+			& a
+				text-decoration: underline
+			& label
+				flex-shrink: 0
