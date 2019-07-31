@@ -358,6 +358,9 @@
               <!-- /.main-catalog-block__title -->
               <!-- /.main-catalog-block__price -->
               <a href="" class="button button--white main-catalog-block__btn">+ Добавить</a>
+                
+                
+
             </div>
             <!-- /.main-cart-bottom__item -->
             <div class="main-catalog-block__item main-cart-bottom__item">
@@ -480,369 +483,156 @@
     </header>
     <!-- /.wrapper wrapper--header -->
 
-    <!-- значек корзины который вылазит при добавлении товараа, толькео в мобилке -->
-    <a href="#" class="mobile-ball"><img src="img/mobile-cart.png" alt=""><span class="mobile-ball__count">1</span></a>
-    <!-- /.mobile-ball -->
-
-    <!-- поп-ап для мобьильной версии, при добавлении в корзину товара -->
-    <div class="modal-bg"></div>
-    <div id="modalAddToCart" class="modal-add">
-      <div class="modal-close">&times</div>
-      <p class="modal-title">Товар добавлен<br> в корзину!</p>
-      <img class="modal-add__img" src="img/card-comments-1.png" alt="">
-      <p class="modal-subtitle"><b>Цветные розы с ваксфлауэром</b> <br>
-      успешно добавлены в корзину</p>
-      <div class="modal-block">
-        <div class="modal-row first">
-          <p class="modal-add__label">Кол-во роз:</p>
-          <p class="modal-add__attr">25</p>
+    <div class="main-cart mobile">
+        <div class="main-cart__head">
+          <p class="main-cart__title title">Корзина</p>
         </div>
-        <div class="modal-row">
-          <p class="modal-add__label">Высота роз:</p>
-          <p class="modal-add__attr">25</p>
-        </div>
-        <!-- /.modal-row -->
-      </div>
-      <!-- /.modal-block -->
-      <a href="#" class="button card-add__button modal-btn"><i class="fas fa-shopping-cart"></i>Перейти в корзину</a>
-      <div class="modal-bottom">
-        <a href="#" class="modal-back">← Продолжить покупки</a>
-        <a href="#" class="modal-delete"><img src="img/delete-red.png" alt="">удалить заказ</a>
-      </div>
-      <!-- /.modal-bottom -->
-    </div>
-    <!-- /.modal-add -->
-
-    <section class="wrapper wrapper--banners">
-      <div class="ycont ycont--banners">
-        <div id="bannerSlider" class="banners-slider">
-          <div class="banners-slide">
-            <img src="img/main-baner-big.png" alt="">
-            <p class="banners-big__title">Все цветы</p>
-            <div class="banners-big__list">
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">До 4000 Р</p>
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">От 10 000 Р</p>
-              <p class="banners-big__item">Эксклюзив</p>
-            </div>
+        <!-- /.main-cart__head -->
+        <div class="main-cart-promo">
+          <p class="main-cart-promo__label">Промокод</p>
+          <div class="main-cart-promo__block">
+            <input type="text" class="input main-cart-promo__input">
+            <a href="#" class="button main-cart-promo__btn">Применить</a>
           </div>
-          <div class="banners-slide">
-            <img src="img/main-baner-big.png" alt="">
-            <p class="banners-big__title">Все цветы</p>
-            <div class="banners-big__list">
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">До 4000 Р</p>
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">От 10 000 Р</p>
-              <p class="banners-big__item">Эксклюзив</p>
-            </div>
-          </div>
-          <div class="banners-slide">
-            <img src="img/main-baner-big.png" alt="">
-            <p class="banners-big__title">Все цветы</p>
-            <div class="banners-big__list">
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">До 4000 Р</p>
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">Акции</p>
-              <p class="banners-big__item">От 10 000 Р</p>
-              <p class="banners-big__item">Эксклюзив</p>
-            </div>
-          </div>
+          <!-- /.main-cart__promo-block -->
         </div>
-        <!-- /.banners-slider -->
-        <div class="banners-block">
-          <a href="#" class="banners-block__item">
-            <img src="img/main-banner-1.png" alt="">
-            <p class="banners-block__title">Авторские букеты <br>
-из красных роз</p>
-            <!-- /.banners-block__title -->
-          </a>
-          <!-- /.banners-block__item -->
-          <a href="#" class="banners-block__item">
-            <img src="img/main-banner-2.png" alt="">
-            <p class="banners-block__title">Букеты в шляпных <br>
-коробках</p>
-            <!-- /.banners-block__title -->
-          </a>
-          <!-- /.banners-block__item -->
-          <a href="#" class="banners-block__item no-margin">
-            <img src="img/main-banner-3.png" alt="">
-            <p class="banners-block__title">Букеты <br>
-из пионов</p>
-            <!-- /.banners-block__title -->
-          </a>
-          <!-- /.banners-block__item -->
-          <a href="#" class="banners-block__item no-margin">
-            <img src="img/main-banner-4.png" alt="">
-            <p class="banners-block__title">Воздушные<br> 
-шары</p>
-            <!-- /.banners-block__title -->
-          </a>
-          <!-- /.banners-block__item -->
-        </div>
-        <!-- /.banners-block -->
-      </div>
-      <!-- /.ycont ycont--banners -->
-    </section>
-    <!-- /.wrapper wrapper--banners -->
-
-    <section class="wrapper wrapper--main-catalog">
-      <div class="ycont ycont--main-catalog">
-        <div class="main-catalog-nav">
-                                                       
-          <h2 class="main-catalog-title title">Цветы</h2>
-          <div class="main-catalog-mob__filters">
-            <a href="#" class="main-catalog-mob__btn"><img src="img/mob-fil.png" alt="">Фильтры <span class="main-catalog-mob__count">2</span></a>
-            <a href="#" class="main-catalog-mob__btn"><img src="img/mob-fil2.png" alt="">Сортировать</a>
-            <div href="#" class="main-catalog-mob__btn last">
-              <a href="#" class="main-catalog-mob__mini first"><span></span></a>
-              <a href="#" class="main-catalog-mob__mini second"><span></span><span></span><span></span><span></span></a>
+        <!-- /.main-cart__promo -->
+        <div class="main-cart__body">
+          <div class="main-cart__item">
+            <span class="main-cart__close"><i>&times</i></span>
+            <div class="main-cart-item__img"><img src="img/main-cart-1.png" alt=""></div>
+            <div class="main-cart-item__info">
+              <p class="main-cart-item__title">Цветные розы с ваксфлауэром</p>
+              <div class="main-cart-item__block">
+                <div class="main-cart-item__col">
+                  <p class="main-cart-item__p">Кол-во</p>
+                  <select name="" id="" class="checkout-det__select main-cart__select">
+                    <option value="25">25</option>
+                    <option value="25">25</option>
+                    <option value="25">25</option>
+                  </select>
+                </div>
+                <!-- /.main-cart-item__col -->
+                <div class="main-cart-item__col">
+                  <p class="main-cart-item__p">Высота</p>
+                  <select name="" id="" class="checkout-det__select main-cart__select">
+                    <option value="25">180</option>
+                    <option value="25">180</option>
+                    <option value="25">180</option>
+                  </select>
+                </div>
+                <!-- /.main-cart-item__col -->
+              </div>
+              <!-- /.main-cart-item__block -->
+              <div class="main-cart-item__block">
+                <p class="main-cart-item__price old">7 999</p>
+                <p class="main-cart-item__price new">5 680 ₽</p>
+              </div>
+              <!-- /.main-cart-item__block -->
             </div>
-            <!-- /.main-catalog-mob__btm last -->
+            <!-- /.main-cart-item__info -->
           </div>
-          <!-- /.main-catalog-mob__filters -->
-          <ul class="header-top__nav header-bottom__nav main-catalog-menu">
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Розы</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Пионы</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Полевые и Садовые Ромашки</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Тюльпаны</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Ранункулюсы</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Гортензии</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Шляпные Коробки</a></li>
-          </ul>
-          <a href="#" class="button button--black main-catalog__btn">Посмотреть все</a>
+          <!-- /.main-cart__item -->
+          <div class="main-cart__item">
+            <span class="main-cart__close">&times</span>
+            <div class="main-cart-item__img"><img src="img/main-cart-1.png" alt=""></div>
+            <div class="main-cart-item__info">
+              <p class="main-cart-item__title">Цветные розы с ваксфлауэром</p>
+              <div class="main-cart-item__block">
+                <div class="main-cart-item__col">
+                  <p class="main-cart-item__p">Кол-во</p>
+                  <select name="" id="" class="checkout-det__select main-cart__select">
+                    <option value="25">25</option>
+                    <option value="25">25</option>
+                    <option value="25">25</option>
+                  </select>
+                </div>
+                <!-- /.main-cart-item__col -->
+                <div class="main-cart-item__col">
+                  <p class="main-cart-item__p">Высота</p>
+                  <select name="" id="" class="checkout-det__select main-cart__select">
+                    <option value="25">180</option>
+                    <option value="25">180</option>
+                    <option value="25">180</option>
+                  </select>
+                </div>
+                <!-- /.main-cart-item__col -->
+              </div>
+              <!-- /.main-cart-item__block -->
+              <div class="main-cart-item__block">
+                <p class="main-cart-item__price old">7 999</p>
+                <p class="main-cart-item__price new">5 680 ₽</p>
+              </div>
+              <!-- /.main-cart-item__block -->
+            </div>
+            <!-- /.main-cart-item__info -->
+          </div>
+          <!-- /.main-cart__item -->
+          <div class="main-cart-result">
+            <div class="main-cart__block">
+              <p class="main-cart-result__p">Товары</p>
+              <p class="main-cart-result__p">11 260 ₽</p>
+            </div>
+            <!-- /.main-cart__block -->
+            <div class="main-cart__block">
+              <p class="main-cart-result__p">Доставка</p>
+              <p class="main-cart-result__p">0 ₽</p>
+            </div>
+            <!-- /.main-cart__block -->
+            <div class="main-cart__block">
+              <p class="main-cart-result__p big">Итого:</p>
+              <p class="main-cart-result__p big bold">11 260 ₽</p>
+            </div>
+            <!-- /.main-cart__block -->
+            <p class="main-cart-result__del">Без учета стоимости доставки<br><a class="link checkout-right__link" href="#">Уточнить стоимость доставки</a></p>
+          </div>
+          <!-- /.main-cart-result -->
         </div>
-        <!-- /.main-catalog-nav -->
-        <div class="main-catalog-block">
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img"><img src="img/main-catalog-1.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <p class="main-catalog-block__subtitle">Доставка через 39 мин</p>
-            <!-- /.main-catalog-block__subtitle -->
-            <div class="main-catalog-block__bottom">
+        <!-- /.main-cart__body -->
+        <div class="main-cart-bottom">
+          <p class="main-cart__title">С этими товарами покупают</p>
+          <div class="main-cart-bottom__block">
+            <div class="main-catalog-block__item main-cart-bottom__item">
+              <div class="heart"></div>
+              <!-- /.heart -->
+              <div class="main-catalog-block__img gifts-block__img"><img src="img/main-cart-img.png" alt=""></div>
+              <!-- /.main-catalog-block__img -->
               <p class="main-catalog-block__price">10 450 ₽</p>
-              <!-- /.main-catalog-block__price -->
-              <a href="" class="button button--white main-catalog-block__btn">Заказать</a>
-            </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img"><img src="img/main-catalog-2.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <p class="main-catalog-block__subtitle">Доставка через 39 мин</p>
-            <!-- /.main-catalog-block__subtitle -->
-            <div class="main-catalog-block__bottom">
-              <p class="main-catalog-block__price">10 450 ₽</p>
-              <!-- /.main-catalog-block__price -->
-              <a href="" class="button button--white main-catalog-block__btn">Заказать</a>
-            </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img"><img src="img/main-catalog-1.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <p class="main-catalog-block__subtitle">Доставка через 39 мин</p>
-            <!-- /.main-catalog-block__subtitle -->
-            <div class="main-catalog-block__bottom">
-              <p class="main-catalog-block__price">10 450 ₽</p>
-              <!-- /.main-catalog-block__price -->
-              <a href="" class="button button--white main-catalog-block__btn">Заказать</a>
-            </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img"><img src="img/main-catalog-2.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <p class="main-catalog-block__subtitle">Доставка через 39 мин</p>
-            <!-- /.main-catalog-block__subtitle -->
-            <div class="main-catalog-block__bottom">
-              <p class="main-catalog-block__price">10 450 ₽</p>
-              <!-- /.main-catalog-block__price -->
-              <a href="" class="button button--white main-catalog-block__btn">Заказать</a>
-            </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
-        </div>
-        <!-- /.main-catalog-block -->
-        <a href="#" class="button button--white main-catalog-btn">Показать еще</a>
-      </div>
-      <!-- /.ycont ycont--main-catalog -->
-    </section>
-    <!-- /.wrapper wrapper--main-catalog -->
-
-    <section class="wrapper wrapper--pay">
-      <div class="ycont ycont--pay">
-        <div class="pay-left">
-          <img class="pay-left__bg" src="img/main-pay-bg.png" alt="Google Pay">
-          <h3 class="pay-left__title">Оплачивайте покупки<br>в 1 клик</h3>
-          <div class="pay-left__list">
-            <p class="pay-left__item"><span class="pay-left__count">1</span>Оплачивайте покупки с помощью Apple pay, Samsung pay и Google pay</p>
-            <p class="pay-left__item"><span class="pay-left__count">2</span>Указывайте подробности заказа в чате с менеджером не тратя время на заполнения форм</p>
-            <p class="pay-left__item"><span class="pay-left__count">3</span>Следите за выполнением заказа через личный кабинет</p>
-          </div>
-          <!-- /.pay-left__list -->
-          <div class="pay-left__logos">
-            <img src="img/pay-apple.png" alt="Apple Pay">
-            <img src="img/pay-google.png" alt="Google Pay">
-            <img src="img/pay-samsung.png" alt="Samsung Pay">
-          </div>
-          <!-- /.pay-left__logos -->
-        </div>
-        <!-- /.pay-left -->
-        <div class="pay-right">
-          <img src="img/main-photo-bg.png" alt="Фото букета" class="pay-right__bg">
-          <h3 class="pay-right__title">Фото букета<br>перед отправкой</h3>
-          <p class="pay-right__txt">Перед отправкой мы всегда
-            согласовываем с Вами
-            заказанный букет, так вы
-            всегда уверенны в качестве 
-            нашей работы  </p>
-        </div>
-        <!-- /.pay-right -->
-      </div>
-      <!-- /.ycont ycont--pay -->
-    </section>
-    <!-- /.wrapper wrapper--pay -->
-
-    <section class="wrapper wrapper--gifts">
-      <div class="ycont ycont--gifts">
-        <div class="main-catalog-nav">
-                                                       
-          <h2 class="main-catalog-title title">Подарки</h2>   
-          <ul class="header-top__nav header-bottom__nav main-catalog-menu">
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Воздушные шары</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Фруктовые наборы</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Мягкие игрушки</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Для неё</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Для детей</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Сладости</a></li>
-            <li class="header-top__nav-link main-catalog-menu__item"><a href="">Свечи и Саше</a></li>
-          </ul>
-          <a href="#" class="button button--black main-catalog__btn">Посмотреть все</a>
-        </div>
-        <!-- /.main-catalog-nav -->
-        <div class="main-catalog-block">
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img gifts-block__img orange"><img src="img/main-gift-1.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <div class="main-catalog-block__bottom">
-              <p class="main-catalog-block__price">10 450 ₽</p>
+              <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
+              <!-- /.main-catalog-block__title -->
               <!-- /.main-catalog-block__price -->
               <a href="" class="button button--white main-catalog-block__btn">+ Добавить</a>
             </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img gifts-block__img gray"><img src="img/main-gift-2.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <div class="main-catalog-block__bottom">
+            <!-- /.main-cart-bottom__item -->
+            <div class="main-catalog-block__item main-cart-bottom__item">
+              <div class="heart"></div>
+              <!-- /.heart -->
+              <div class="main-catalog-block__img gifts-block__img"><img src="img/main-cart-img.png" alt=""></div>
+              <!-- /.main-catalog-block__img -->
               <p class="main-catalog-block__price">10 450 ₽</p>
               <!-- /.main-catalog-block__price -->
+              <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
+              <!-- /.main-catalog-block__title -->
               <a href="" class="button button--white main-catalog-block__btn">+ Добавить</a>
+
             </div>
-            <!-- /.main-catalog-block__bottom -->
+            <!-- /.main-cart-bottom__item -->
           </div>
-          <!-- /.main-catalog-block__item -->
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img gifts-block__img blue"><img src="img/main-gift-3.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <div class="main-catalog-block__bottom">
-              <p class="main-catalog-block__price">10 450 ₽</p>
-              <!-- /.main-catalog-block__price -->
-              <a href="" class="button button--white main-catalog-block__btn">+ Добавить</a>
-            </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
-          <div class="main-catalog-block__item">
-            <div class="heart"></div>
-            <!-- /.heart -->
-            <div class="main-catalog-block__img gifts-block__img red"><img src="img/main-gift-4.png" alt=""></div>
-            <!-- /.main-catalog-block__img -->
-            <p class="main-catalog-block__title">Розовые тюльпаны в шляпной коробке</p>
-            <!-- /.main-catalog-block__title -->
-            <div class="main-catalog-block__bottom">
-              <p class="main-catalog-block__price">10 450 ₽</p>
-              <!-- /.main-catalog-block__price -->
-              <a href="" class="button button--white main-catalog-block__btn">+ Добавить</a>
-            </div>
-            <!-- /.main-catalog-block__bottom -->
-          </div>
-          <!-- /.main-catalog-block__item -->
+          <!-- /.main-cart-bottom__block -->
         </div>
-        <!-- /.main-catalog-block -->
-        <a href="#" class="button button--white main-catalog-btn">Показать еще</a>
+        <!-- /.main-cart-bottom -->
+
+        <div class="main-cart-mobile__count">
+          <p class="main-cart-mobile__count-txt">Добавлено 2 товара <span>11 260 ₽</span></p>
+          <a href="#" class="button main-cart-mobile__count-btn">Купить</a>
+        </div>
+        <!-- /.main-cart-mobile__count -->
+        
       </div>
-      <!-- /.ycont ycont--gifts -->
-    </section>
-    <!-- /.wrapper wrapper--gifts -->
-
-    <section class="wrapper wrapper--sales">
-      <div class="ycont ycont--sales">
-        <div class="sales-promo">
-          <img class="sales-promo__bg" src="img/main-promo-bg.png" alt="Розы">
-          <p class="sales-promo__title">10% скидки на первую покупку</p>
-          <p class="sales-promo__subtitle">промокод:</p>
-          <p class="sales-promo__promo">ONE_SALE</p>
-          <a href="#" class="button sales-promo__btn">Скопировать</a>
-        </div>
-        <!-- /.sales-promo -->
-        <div class="sales-posts">
-          <img src="img/main-card.png" alt="Открытки" class="sales-posts__bg">
-          <p class="sales-posts__title">Открытка в подарок</p>
-          <p class="sales-posts__subtitle">Фирменная открытка и конверт с золотым тиснением и ароматом Montale.</p>
-        </div>
-        <!-- /.sales-posts -->
-        <div class="sales-posts">
-          <img src="img/main-wtf.png" alt="Комплект по уходу" class="sales-posts__bg">
-          <p class="sales-posts__title">Комплект по уходу</p>
-          <p class="sales-posts__subtitle">К букету прилагаются инструкция по уходу и средство, продлевающее жизнь цветов.</p>
-        </div>
-        <!-- /.sales-posts -->
-      </div>
-      <!-- /.ycont ycont--sales -->
-    </section>
-    <!-- /.wrapper wrapper--sales -->
+      <!-- /.main-cart -->
 
 
-    <footer class="wrapper wrapper--footer">
+<footer class="wrapper wrapper--footer">
       <div class="ycont ycont--mobile-footer">
         
       </div>
@@ -916,7 +706,7 @@
       <!-- /.ycont ycont--footer-end -->
     </footer>
     <!-- /.wrapper wrapper--footer -->
- 		
+    
 
     <!-- jQuery first-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

@@ -101,6 +101,10 @@ $('.catalog-find__p, .catalog-color__item').click(function(event) {
 	$(this).toggleClass('active');
 });
 
+$('.main-catalog-mob__mini ').click(function(event) {
+	$(this).toggleClass('active');
+});
+
 
 
 
